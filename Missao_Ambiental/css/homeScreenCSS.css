@@ -1,0 +1,655 @@
+.button_sidebar{
+    display: none;
+    border: none;
+    margin: 32px 0px 0px 10%;
+    background-color: transparent;
+}
+.navigation_header .button_sidebar{
+    margin: 30px 98px ;
+}
+.dropdown-menu{
+    cursor: pointer;
+}
+.search_button{
+    display: none;
+    border: none;
+    background-color: transparent;
+    margin: -24px 10px 0px 80%;
+}
+.search_box_mobile{
+    display: none;
+    opacity: 0.7;
+    margin: 40px 20px;
+    text-align: center;
+    padding: 25px 30px 25px 10px;
+    background-color: #c5c5c5;
+    border-radius: 40px;
+    border: none;
+}
+@media (max-width: 1023px){
+    *{
+        margin: 0;
+        padding: 0;
+    } 
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #dfdfdf;
+    }
+    li{
+        list-style-type: none;
+    }
+    header{
+        position: fixed;
+        width: 100%;
+        height: 100px;
+        background-color: #dfdfdf;
+    }
+    .logo_header img{
+        width: 80px;
+        position: fixed;
+        margin: 10px 40%;
+    }
+   .navigation_header{
+        width: 230px;
+        height: 100%;
+        position: fixed;
+        flex-direction: column;
+        padding: 0px 0px 1000px 0px;
+        top: 0;
+        background-color: #3B7D36;
+        animation-duration: 2s;
+        margin-left: -230px;
+        overflow-y: auto;
+        /* O overflow esta fazendo com que o dropdown menu nao apareca */
+    }
+    @keyframes showSidebar {
+        from{margin-left: 0px;}
+        top{margin-left: -230px;}
+    }
+    header nav{
+        position: static;
+    }
+    .button_sidebar{
+        display: block;
+    }
+    .search_box{
+        display: none;
+    }
+    .dropdown-title{
+        font-size: 20px;
+        margin: 10px 20%;
+        text-decoration: none;
+        font-weight: bolder;
+        margin-right: 30px;
+        color:rgb(0, 0, 0);
+    }
+    .dropdown{
+        border-radius: 10px;
+        padding: 10px 15px;
+    }
+    .dropdown-menu{
+        position: absolute;
+        background-color: #c5c5c5;
+        border: none;
+        margin-left: 200px;
+        margin-top: -70px;
+        border-radius: 10px;
+        display: none;
+    }
+    .dropdown-menu a{
+        font-size: 22px;
+        text-decoration: none;
+        margin: 20px;
+        color: black;
+        display: block;
+    }
+    .dropdown-menu a:hover{
+        transition: 0.25s;
+        color: #7a7a7a;
+    }
+    .dropdown:hover{
+        background-color: #c5c5c5;
+        transition: 0.5s;
+    }
+    .dropdown:hover .dropdown-menu{
+        display: block;
+    }
+   .search_box_mobile{
+        display: block;
+    }
+    .search_button{
+        display: block;
+    }
+    .dropdown{
+        margin: 15px;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    .logo_body h1, .logo_body{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: #465F44;
+        font-size: 50px;
+        font-weight: lighter;
+    }
+    .logo_body h1{
+        margin-top: 30%;
+    }
+    .background_image{
+        background-image: url(/Missao_Ambiental/imagens/imagem_fundo1.jpg);
+        background-size: 150%;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0.5;
+        padding-bottom: 250px;
+        position: relative;
+        z-index: -1;
+    }
+    .background_image img{
+        width: 150px; margin: 150px 0px 20px 15px;
+    }
+    .contact{
+        cursor: pointer;
+        text-align: center; 
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        height: 90px; 
+        background-color: #3B7D36;
+    }
+    .contact img{
+        width: 60px;
+        margin: 0 10px;
+    }
+    .divider{
+        background-color: #3B7D36;
+        height: 6px;
+        width: 150px;
+        margin: 150px 34%;
+    }
+   .title{
+        font-size: 40px;
+        color: #665656;
+        margin-left: 50px;
+    }
+    .round_images{
+        display: flex;
+        flex-direction: column;
+    }
+    .mission_item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .mission_item img{
+        margin: 90px 52px 5px 52px;
+        border: solid 3px #3B7D36;
+        padding: 10px;
+        border-radius: 100%;
+        width: 200px;
+        height: 200px;
+    }
+    .mission_item figcaption{
+        font-size: 20px;
+        font-weight: bold;
+        color:rgb(29, 70, 41);
+    }
+    .mission_item img:hover{
+        transform: scale(1.1);
+        background-color: #7a7a7a;
+        border: solid 5px #7a7a7a;
+        opacity: 0.6;
+        transition: 1s;
+        cursor: pointer;
+    }
+    .last_posts img{
+        border: solid 2px black;
+        padding: 30%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin: 40px 25% 150px 25%;
+        width: 50%;
+    }
+    .logo_footer img{
+        margin: 15px 5px 5px 15px;
+        width: 100px;
+    }
+    footer {
+        width: 100%;
+        background-color:#B3C79E;
+        text-align: center;
+    }
+    .footer-container {
+        justify-content: space-between;
+        align-items: center;
+    }
+    .text-content {
+        display: flex;
+        flex-direction: column; 
+        margin-left: 20px;
+        font-size: large;
+    }
+    .description, .informations {
+        margin-top: 20px;
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1439px){
+    *{
+        margin: 0;
+        padding: 0;
+    } 
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #dfdfdf;
+    }
+    li{
+        list-style-type: none;
+    }
+    header, .navigation_header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 20px;
+        gap: 30px;
+    }
+    header{
+        position: fixed;
+        width: 100%;
+        height: 90px;
+        justify-content: space-between;
+    }
+    .logo_header img{
+        width: 80px; 
+        margin-left: 10px;
+    }
+    header.sticky{
+        transition: 1.2s;
+        padding: 5px 20px;
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+    header.sticky .dropdown-title{
+        color:rgb(29, 70, 41)
+    }
+    .navigation_header nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .sidebar{
+        display: none;
+    }
+    .button{
+        display: none;
+    }
+    .dropdown-title{
+        cursor: default;
+        font-size: 15px;
+        text-decoration: none;
+        font-weight: bolder;
+        margin-right: 30px;
+        color:rgb(0, 0, 0);
+    }
+    .dropdown{
+        border-radius: 10px;
+        padding: 10px 15px;
+    }
+    .dropdown-menu{
+        position: absolute;
+        background-color: #c5c5c5;
+        border: none;
+        margin-left: -20px;
+        border-radius: 10px;
+        display: none;
+    }
+    .dropdown-menu a{
+        text-decoration: none;
+        margin: 20px;
+        color: black;
+        display: block;
+    }
+    .dropdown-menu a:hover{
+        transition: 0.25s;
+        color: #7a7a7a;
+    }
+    .dropdown:hover{
+        background-color: #c5c5c5;
+        transition: 0.5s;
+    }
+    .dropdown:hover .dropdown-menu{
+        display: block;
+    }
+    .search_box{
+        opacity: 0.7;
+        margin-right: 60px;
+        text-align: left;
+        padding: 10px 70px 10px 10px;
+        background-color: #c5c5c5;
+        border-radius: 40px;
+        border: none;
+    }
+    .logo_body h1, .logo_body{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: #465F44;
+        font-size: 80px;
+        font-weight: lighter;
+    }
+    .background_image{
+        background-image: url(/Missao_Ambiental/imagens/imagem_fundo1.jpg);
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0.5;
+        padding-bottom: 150px;
+        position: relative;
+        z-index: -1;
+    }
+    .background_image img{
+        width: 250px; margin: 90px 0 20px 45px;
+    }
+    .contact{
+        cursor: pointer;
+        text-align: center; 
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        height: 90px; 
+        background-color: #3B7D36;
+    }
+    .contact img{
+        width: 60px;
+        margin: 0 10px;
+    }
+    .contact img:hover{
+        transform: scale(1.05);
+        opacity: 0.7;   
+        transition: 0.5s;
+    }
+    .divider{
+        background-color: #3B7D36;
+        height: 6px;
+        width: 400px;
+        margin: 150px 34%;
+    }
+   .title{
+        font-size: 40px;
+        color: #665656;
+        margin-left: 50px;
+    }
+    .round_images{
+        display: flex;
+        flex-direction: row;
+    }
+    .mission_item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .mission_item img{
+        margin: 90px 52px 5px 52px;
+        border: solid 3px #3B7D36;
+        padding: 10px;
+        border-radius: 100%;
+        width: 200px;
+        height: 200px;
+    }
+    .mission_item figcaption{
+        font-size: 20px;
+        font-weight: bold;
+        color:rgb(29, 70, 41);
+    }
+    .mission_item img:hover{
+        transform: scale(1.1);
+        background-color: #7a7a7a;
+        border: solid 5px #7a7a7a;
+        opacity: 0.6;
+        transition: 1s;
+        cursor: pointer;
+    }
+    .last_posts img{
+        border: solid 2px black;
+        padding: 170px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin: 40px 25% 150px 25%;
+        width: 50%;
+    }
+    .logo_footer img{
+        margin: 15px 5px 5px 15px;
+        width: 100px;
+    }
+    footer {
+        background-color:#B3C79E;
+        text-align: center;
+    }
+    .footer-container {
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-between;
+        align-items: center;
+    }
+    .text-content {
+        display: flex;
+        flex-direction: column; 
+        margin-left: 20px;
+        font-size: large;
+    }
+    .description, .informations {
+        margin-top: 20px;
+        font-size: 15px;
+    }
+}
+@media (min-width: 1440px){
+    *{
+        margin: 0;
+        padding: 0;
+    } 
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #dfdfdf;
+    }
+    li{
+        list-style-type: none;
+    }
+    header, .navigation_header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 25px;
+        gap: 30px;
+    }
+    .logo_header img{
+        width: 100px; 
+        margin-left: 10px;
+    }
+    header{
+        position: fixed;
+        width: 100%;
+        height: 120px;
+        justify-content: space-between;
+    }
+    header.sticky{
+        transition: 1.2s;
+        padding: 5px 20px;
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+    header.sticky .dropdown-title{
+        color:rgb(29, 70, 41)
+    }
+    .navigation_header nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .dropdown-title{
+        text-decoration: none;
+        font-weight: bolder;
+        color:rgb(0, 0, 0);
+    }
+    .sidebar{
+        display: none;
+    }
+    .button{
+        display: none;
+    }
+    .dropdown{
+        margin: 0 45px;
+        border-radius: 10px;
+        padding: 10px 20px;
+    }
+    .dropdown-menu{
+        position: absolute;
+        background-color: #c5c5c5;
+        margin-left: -20px;
+        border-radius: 10px;
+        display: none;
+        border: none;
+    }
+    .dropdown-menu a{
+        text-decoration: none;
+        margin: 20px;
+        color: black;
+        display: block;
+    }
+    .dropdown-menu a:hover{
+        transition: 0.25s;
+        color: #7a7a7a;
+    }
+    .dropdown:hover{
+        background-color: #c5c5c5;
+        transition: 0.5s;
+    }
+    .dropdown:hover .dropdown-menu{
+        display: block;
+    }
+    .search_box{
+        opacity: 0.7;
+        margin-right: 60px;
+        text-align: left;
+        padding: 15px 110px 15px 20px;
+        background-color: #c5c5c5;
+        border-radius: 40px;
+        border: none;
+    }
+    .logo_body h1, .logo_body{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: #465F44;
+        font-size: 100px;
+        font-weight: lighter;
+    }
+    .background_image{
+        background-image: url(/Missao_Ambiental/imagens/imagem_fundo1.jpg);
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0.5;
+        padding-bottom: 150px;
+        position: relative;
+        z-index: -1;
+    }
+    .background_image img{
+        width: 400px; margin: 150px 0 150px 100px;
+    }
+    .contact{
+        cursor: pointer;
+        text-align: center; 
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        height: 130px; 
+        background-color: #3B7D36;
+    }
+    .contact img{
+        width: 90px;
+        margin: 0 10px;
+    }
+    .contact img:hover{
+        transform: scale(1.05);
+        opacity: 0.7;   
+        transition: 0.5s;
+    }
+    .divider{
+        background-color: #3B7D36;
+        height: 6px;
+        width: 400px;
+        margin: 200px 39%;
+    }
+    .title{
+        font-size: 60px;
+        color: #665656;
+        margin: 200px 0px 50px 50px;
+    }
+    .round_images{
+        display: flex;
+        flex-direction: row;
+    }
+    .mission_item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .mission_item img{
+        margin: 120px 95px 5px 95px;
+        border: solid 5px #3B7D36;
+        padding: 10px;
+        border-radius: 100%;
+        width: 250px;
+        height: 250px;
+    }
+    .mission_item figcaption{
+        font-size: 30px;
+        font-weight: bold;
+        color:rgb(29, 70, 41);
+    }
+    .mission_item img:hover{
+        transform: scale(1.1);
+        background-color: #7a7a7a;
+        border: solid 5px #7a7a7a;
+        opacity: 0.6;
+        transition: 1s;
+        cursor: pointer;
+    }
+    .last_posts img{
+        border: solid 2px black;
+        padding: 350px 10px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 150px;
+        width: 50%;
+    }
+    .logo_footer img{
+        margin: 15px 5px 5px 15px;
+        width: 150px;
+    }
+    footer {
+        background-color:#B3C79E;
+        text-align: center;
+        padding: 80px 20px 100px 10px;
+    }
+    .footer-container {
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-between;
+        align-items: center;
+    }
+    .text-content {
+        display: flex;
+        flex-direction: column; 
+        margin-left: 20px;
+        font-size: large;
+    }
+    .description, .informations {
+        margin-top: 20px;
+        font-size: 25px;
+    }
+}
