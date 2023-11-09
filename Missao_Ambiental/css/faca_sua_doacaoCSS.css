@@ -23,7 +23,7 @@
         margin: 10px 40%;
     }
     .navigation_header{
-        width: 230px;
+        width: 80%;
         height: 100%;
         position: fixed;
         flex-direction: column;
@@ -46,9 +46,10 @@
     .search_box{
         display: none;
     }
-    .dropdown-title{
-        font-size: 20px;
-        margin: 10px 20%;
+    .dropdown_title{
+        font-size: 25px;
+        margin: 10px 10%;
+        text-align: center;
         text-decoration: none;
         font-weight: bolder;
         margin-right: 30px;
@@ -58,33 +59,33 @@
         border-radius: 10px;
         padding: 10px 15px;
     }
-    .dropdown-menu{
-        position: absolute;
+    .dropdown_menu{
+        text-align: center;
         background-color: #c5c5c5;
         border: none;
-        margin-left: 200px;
-        margin-top: -70px;
+        margin-left: 0px;
+        margin-top: 0px;
         border-radius: 10px;
         display: none;
     }
-    .dropdown-menu a{
+    .dropdown_menu a{
         font-size: 22px;
         text-decoration: none;
         margin: 20px;
         color: black;
         display: block;
     }
-    .dropdown-menu a:hover{
+    /* .dropdown_menu a:hover{
         transition: 0.25s;
         color: #7a7a7a;
-    }
+    } */
     .dropdown:hover{
         background-color: #c5c5c5;
         transition: 0.5s;
     }
-    .dropdown:hover .dropdown-menu{
+    /* .dropdown:hover .dropdown_menu{
         display: block;
-    }
+    } */
     .search_box_mobile{
         display: block;
     }
@@ -119,9 +120,9 @@
         background-color: transparent;
     }
     .navigation_header .button_sidebar{
-        margin: 30px 98px ;
+        margin: 30px 47.5%;
     }
-    .dropdown-menu{
+    .dropdown_menu{
         cursor: pointer;
     }
     .background_image{
@@ -268,7 +269,7 @@
         padding: 5px 20px;
         background-color: rgba(255, 255, 255, 0.7);
     }
-    header.sticky .dropdown-title{
+    header.sticky .dropdown_title{
         color:rgb(29, 70, 41)
     }
     .navigation_header nav{
@@ -281,7 +282,7 @@
     .button{
         display: none;
     }
-    .dropdown-title{
+    .dropdown_title{
         cursor: default;
         font-size: 15px;
         text-decoration: none;
@@ -293,7 +294,7 @@
         border-radius: 10px;
         padding: 10px 15px;
     }
-    .dropdown .dropdown-menu{
+    .dropdown .dropdown_menu{
         position: absolute;
         border: none;
         margin-left: -15px;
@@ -301,13 +302,13 @@
         display: none;
         background-color: #c5c5c5
     }
-    .dropdown-menu a{
+    .dropdown_menu a{
         text-decoration: none;
         margin: 20px;
         color: black;
         display: block;
     }
-    .dropdown-menu a:hover{
+    .dropdown_menu a:hover{
         transition: 0.25s;
         color: #7a7a7a;
     }
@@ -315,7 +316,7 @@
         background-color: #c5c5c5;
         transition: 0.5s;
     }
-    .dropdown:hover .dropdown-menu{
+    .dropdown:hover .dropdown_menu{
         display: block;
     }
     .search_box{
@@ -488,14 +489,14 @@
         padding: 5px 20px;
         background-color: rgba(255, 255, 255, 0.7);
     }
-    header.sticky .dropdown-title{
+    header.sticky .dropdown_title{
         color:rgb(29, 70, 41)
     }
     .navigation_header nav{
         display: flex;
         justify-content: space-between;
     }
-    .dropdown-title{
+    .dropdown_title{
         text-decoration: none;
         font-weight: bolder;
         color:rgb(0, 0, 0);
@@ -512,7 +513,7 @@
         border-radius: 10px;
         padding: 10px 20px;
     }
-    .dropdown .dropdown-menu{
+    .dropdown .dropdown_menu{
         font-size: 22px;
         position: absolute;
         background-color: #c5c5c5;
@@ -521,13 +522,13 @@
         display: none;
         border: none;
     }
-    .dropdown-menu a{
+    .dropdown_menu a{
         text-decoration: none;
         margin: 20px;
         color: black;
         display: block;
     }
-    .dropdown-menu a:hover{
+    .dropdown_menu a:hover{
         transition: 0.25s;
         color: #7a7a7a;
     }
@@ -535,10 +536,10 @@
         background-color: #c5c5c5;
         transition: 0.5s;
     }
-    .dropdown:hover .dropdown-menu{
+    .dropdown:hover .dropdown_menu{
         display: block;
     }
-    .dropdown-menu{
+    .dropdown_menu{
         cursor: pointer;
     }
     .search_box{

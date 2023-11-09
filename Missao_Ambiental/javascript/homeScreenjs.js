@@ -17,8 +17,14 @@ function toggleSideBar(){
         
     }
     else{
-        navigation_header.style.marginLeft = '-240px'
+        navigation_header.style.marginLeft = '-80%'
         document.body.style.overflow = 'visible'
     }
 }
+
+function accordion(menuID){
+    var menu = document.getElementById(menuID)
+    menu.style.display = (menu.style.display === 'block') ? 'none' : 'block'
+}
+
 

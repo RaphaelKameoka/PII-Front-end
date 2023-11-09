@@ -1,13 +1,4 @@
-.button_sidebar{
-    display: none;
-    border: none;
-    margin: 32px 0px 0px 10%;
-    background-color: transparent;
-}
-.navigation_header .button_sidebar{
-    margin: 30px 98px ;
-}
-.dropdown-menu{
+.dropdown_menu{
     cursor: pointer;
 }
 .search_button{
@@ -15,6 +6,17 @@
     border: none;
     background-color: transparent;
     margin: -24px 10px 0px 80%;
+}
+.button_sidebar{
+    display: block;
+    border: none;
+    margin: 32px 0px 0px 10%;
+    background-color: transparent;
+    display: none;
+}
+.navigation_header .button_sidebar{
+    margin: 30px 47.5%;
+    display: none;
 }
 .search_box_mobile{
     display: none;
@@ -50,7 +52,7 @@
         margin: 10px 40%;
     }
    .navigation_header{
-        width: 230px;
+        width: 80%;
         height: 100%;
         position: fixed;
         flex-direction: column;
@@ -59,8 +61,9 @@
         background-color: #3B7D36;
         animation-duration: 2s;
         margin-left: -230px;
+        flex-direction: column;
+        display: flex;
         overflow-y: auto;
-        /* O overflow esta fazendo com que o dropdown menu nao apareca */
     }
     @keyframes showSidebar {
         from{margin-left: 0px;}
@@ -75,9 +78,10 @@
     .search_box{
         display: none;
     }
-    .dropdown-title{
-        font-size: 20px;
-        margin: 10px 20%;
+    .dropdown_title{
+        font-size: 25px;
+        margin: 10px 10%;
+        text-align: center;
         text-decoration: none;
         font-weight: bolder;
         margin-right: 30px;
@@ -87,37 +91,36 @@
         border-radius: 10px;
         padding: 10px 15px;
     }
-    .dropdown-menu{
-        position: absolute;
+    .dropdown_menu{
+        text-align: center;
         background-color: #c5c5c5;
         border: none;
-        margin-left: 200px;
-        margin-top: -70px;
+        margin-left: 0px;
+        margin-top: 0px;
         border-radius: 10px;
         display: none;
     }
-    .dropdown-menu a{
+    .dropdown_menu a{
         font-size: 22px;
         text-decoration: none;
         margin: 20px;
         color: black;
         display: block;
     }
-    .dropdown-menu a:hover{
-        transition: 0.25s;
-        color: #7a7a7a;
-    }
     .dropdown:hover{
         background-color: #c5c5c5;
         transition: 0.5s;
-    }
-    .dropdown:hover .dropdown-menu{
-        display: block;
     }
    .search_box_mobile{
         display: block;
     }
     .search_button{
+        display: block;
+    }
+    .button_sidebar{
+        display: block;
+    }
+    .navigation_header .button_sidebar{
         display: block;
     }
     .dropdown{
@@ -285,7 +288,7 @@
     .button{
         display: none;
     }
-    .dropdown-title{
+    .dropdown_title{
         cursor: default;
         font-size: 15px;
         text-decoration: none;
@@ -297,7 +300,7 @@
         border-radius: 10px;
         padding: 10px 15px;
     }
-    .dropdown-menu{
+    .dropdown_menu{
         position: absolute;
         background-color: #c5c5c5;
         border: none;
@@ -305,13 +308,13 @@
         border-radius: 10px;
         display: none;
     }
-    .dropdown-menu a{
+    .dropdown_menu a{
         text-decoration: none;
         margin: 20px;
         color: black;
         display: block;
     }
-    .dropdown-menu a:hover{
+    .dropdown_menu a:hover{
         transition: 0.25s;
         color: #7a7a7a;
     }
@@ -319,7 +322,7 @@
         background-color: #c5c5c5;
         transition: 0.5s;
     }
-    .dropdown:hover .dropdown-menu{
+    .dropdown:hover .dropdown_menu{
         display: block;
     }
     .search_box{
@@ -487,7 +490,7 @@
         display: flex;
         justify-content: space-between;
     }
-    .dropdown-title{
+    .dropdown_title{
         text-decoration: none;
         font-weight: bolder;
         color:rgb(0, 0, 0);
@@ -503,7 +506,7 @@
         border-radius: 10px;
         padding: 10px 20px;
     }
-    .dropdown-menu{
+    .dropdown_menu{
         position: absolute;
         background-color: #c5c5c5;
         margin-left: -20px;
@@ -511,13 +514,13 @@
         display: none;
         border: none;
     }
-    .dropdown-menu a{
+    .dropdown_menu a{
         text-decoration: none;
         margin: 20px;
         color: black;
         display: block;
     }
-    .dropdown-menu a:hover{
+    .dropdown_menu a:hover{
         transition: 0.25s;
         color: #7a7a7a;
     }
@@ -525,7 +528,7 @@
         background-color: #c5c5c5;
         transition: 0.5s;
     }
-    .dropdown:hover .dropdown-menu{
+    .dropdown:hover .dropdown_menu{
         display: block;
     }
     .search_box{
