@@ -21,10 +21,13 @@ function toggleSideBar(){
         document.body.style.overflow = 'visible'
     }
 }
-
 function accordion(menuID){
     var menu = document.getElementById(menuID)
     menu.style.display = (menu.style.display === 'block') ? 'none' : 'block'
+}
+function title_bg(titleID) {
+    let title = document.getElementById(titleID);
+    title.style.backgroundColor = (title.style.backgroundColor === 'rgb(197, 197, 197)') ? '#3B7D36' : '#c5c5c5';
 }
 
 

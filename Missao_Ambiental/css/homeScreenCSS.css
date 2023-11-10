@@ -52,6 +52,7 @@
         margin: 10px 40%;
     }
    .navigation_header{
+        padding: 0px;
         width: 80%;
         height: 100%;
         position: fixed;
@@ -60,10 +61,10 @@
         top: 0;
         background-color: #3B7D36;
         animation-duration: 2s;
-        margin-left: -230px;
+        margin-left: -80%;
         flex-direction: column;
         display: flex;
-        overflow-y: auto;
+        overflow-y: auto;   
     }
     @keyframes showSidebar {
         from{margin-left: 0px;}
@@ -92,6 +93,7 @@
         padding: 10px 15px;
     }
     .dropdown_menu{
+        padding: 2px 0 10px 0;
         text-align: center;
         background-color: #c5c5c5;
         border: none;
@@ -106,10 +108,6 @@
         margin: 20px;
         color: black;
         display: block;
-    }
-    .dropdown:hover{
-        background-color: #c5c5c5;
-        transition: 0.5s;
     }
    .search_box_mobile{
         display: block;
