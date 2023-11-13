@@ -1,6 +1,6 @@
 window.addEventListener("scroll", function(){
     var header = document.querySelector("header");
-    header.classList.toggle("sticky", window.scrollY > 100)
+    header.classList.toggle("sticky", window.scrollY > 0)
 })
 
 // Sidebar
@@ -21,13 +21,21 @@ function toggleSideBar(){
         document.body.style.overflow = 'visible'
     }
 }
+
 function accordion(menuID){
     var menu = document.getElementById(menuID)
-    menu.style.display = (menu.style.display === 'block') ? 'none' : 'block'
+    let w = window.innerWidth;
+    if(w < 1023){
+        menu.style.display = (menu.style.display === 'block') ? 'none' : 'block'
+    }
+    else{
+        menu.style.display = 'none'
+    }
 }
 function title_bg(titleID) {
     let title = document.getElementById(titleID);
-    title.style.backgroundColor = (title.style.backgroundColor === 'rgb(197, 197, 197)') ? '#3B7D36' : '#c5c5c5';
+    let w = window.innerWidth;
+    if (w < 1023){
+        title.style.backgroundColor = (title.style.backgroundColor === 'rgb(197, 197, 197)') ? '#3B7D36' : '#c5c5c5';
+    }
 }
-
-
