@@ -294,7 +294,7 @@
     }
     .dropdown_menu a{
         text-decoration: none;
-        margin: 20px;
+        margin: 20px 0;
         color: black;
         display: block;
     }
