@@ -5,7 +5,7 @@
     display: none;
     border: none;
     background-color: transparent;
-    margin: -24px 10px 0px 80%;
+    margin: -24px 10px 0px 85%;
 }
 .button_sidebar{
     display: block;
@@ -49,7 +49,7 @@
     .logo_header img{
         width: 80px;
         position: fixed;
-        margin: 10px 40%;
+        margin: 10px 45%;
     }
    .navigation_header{
         padding: 0px;
