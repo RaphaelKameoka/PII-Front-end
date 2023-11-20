@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/abelha_sem_ferraoCSS.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>Abelhas sem ferrão</title>
+    <script src="javascript/homeScreenjs.js"></script>
+</head>
+<body>
+    <header id="header">
+        <div class="logo_header">
+            <a href="homeScreen.html"><img src="imagens\logo_missao_ambiental_sem_fundo.png" alt="Logo Missao Ambiental"link></a>
+        </div>
+        <button onclick="toggleSideBar()" id="open_button" class="button_sidebar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </button>
+        <div class="navigation_header" id="navigation_header">
+            <nav>
+                <button onclick="toggleSideBar()" class="button_sidebar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </button>
+                <div class="search_box_mobile">
+                    <input type="text" class="search_box">
+                </div>
+                <div onclick="title_bg('title1')" class="dropdown" id="title1">
+                    <div onclick="accordion('menu1')"  class="dropdown_title">Nossos projetos &#11167</div>
+                    <ul id="menu1" class="dropdown_menu">
+                        <li><a href="abelha_sem_ferrao.html">Abelha sem ferrão</a></li>
+                        <li><a href="especies_nativas.html">Espécies nativas</a></li>
+                        <li><a href="compostagem.html">Compostagem</a></li>
+                        <li><a href="horta.html">Horta comunitária</a></li>
+                        <li><a href="educacao_ambiental.html">Educação ambiental</a></li>
+                        <li><a href="agua_da_chuva.html">Captacao da água da chuva</a></li>
+                        <li><a href="reciclagem.html">Reciclagem</a></li>
+                    </ul>
+                </div>
+                <div onclick="title_bg('title2')" class="dropdown" id="title2" class="dropdown">
+                    <div onclick="accordion('menu2')" class="dropdown_title">Sobre a Missão Ambiental &#11167</div>
+                    <ul id="menu2" class="dropdown_menu">
+                        <li><a href="quem_somos.html">Quem somos</a></li>
+                        <li><a href="nossa_historia.html">Nossa história</a></li>
+                        <li><a href="parceiros.html">Parceiros fantásticos</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                    </ul>
+                </div>            
+                <div onclick="title_bg('title3')" class="dropdown" id="title3" class="dropdown">
+                    <div onclick="accordion('menu3')" class="dropdown_title">Como Ajudar &#11167</div>
+                    <ul id="menu3" class="dropdown_menu">
+                        <li><a href="/Missao_Ambiental/faca_sua_doacao.html">Faça sua doação</a></li>
+                        <li><a href="/Missao_Ambiental/seja_voluntario.html">Torne-se um voluntário</a></li>
+                        <li><a href="entre_contato.html">Entre em contato</a></li>
+                    </ul>
+                </div>        
+            </nav>
+        </div>
+        <div class="search_active">
+            <input type="text" class="search_box">
+            <button class="search_button" onclick="toggleSideBar()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg>
+            </button>
+        </div>
+    </header>
+    <main>
+        <div class="background_image"></div>
+        <div class="message">
+            <h2>Abelhas sem Ferrão</h2>
+        </div>
+        <div class="contact">
+            <img src="imagens\gmail_icon.png" alt="icone Gmail" title="Gmail">
+            <img src="imagens\whatsapp_icon.png " alt="icone Whatsapp" title="Whatsapp">
+            <img src="imagens\instagram_icon.png" alt="icone Instagram" title="Instagram">
+            <img src="imagens\facebook_icon.png" alt="icone facebook" title="Facebook">
+        </div>
+        <article>
+            <h2 class="title" id="description">O que é</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente impedit aspernatur vel. Saepe quidem animi dolorem a quod cum omnis et voluptatum quo sapiente, eius ipsa dolorum inventore, natus voluptates. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis facere ad dolores quasi, corporis cumque odit vero amet eum? Ad, reiciendis error sint reprehenderit tempora accusantium eius libero. Amet, magni? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore ipsam nesciunt officiis ratione exercitationem laborum, ut laudantium tempora iusto sint sequi totam maxime! Quod, earum iusto odit quo quisquam ad?</p>
+            <h2 class="title" id="acting">Como funciona</h2>
+            <p id="act">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi a consectetur tempora. Delectus, sed. Laboriosam harum dolorum inventore omnis ullam sint quas beatae? Vel ipsa, perferendis magnam vitae commodi non Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam impedit eligendi assumenda! Sed iste, molestiae impedit, odio doloremque necessitatibus distinctio autem explicabo natus quasi, voluptatem aliquam perspiciatis officiis et eos Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo deserunt dicta aut at, veritatis eveniet. Nesciunt doloribus accusantium culpa provident eveniet? Illo tenetur facilis autem dicta, aliquam vel tempora? Est Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi veniam quod nam dolor tempora voluptatibus, praesentium perferendis explicabo odio maxime molestias natus nihil dignissimos excepturi assumenda exercitationem voluptatum at numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, recusandae dolorum inventore sequi iste nam maxime dignissimos est, eaque totam soluta molestiae eligendi facere quidem deserunt nemo beatae explicabo esse? Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, omnis officiis! Vero temporibus mollitia officia et distinctio totam adipisci quia quas labore molestias reiciendis ducimus tempore, fugit dicta itaque sed!</p>
+        </article>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="logo_footer">
+                <img src="imagens\logo_missao_ambiental_sem_fundo.png" alt="logo_Missao_Ambiental">
+            </div>
+            <div class="text-content">
+                <div class="description">
+                    A Missão Ambiental é uma associação civil sem fins lucrativos que cria espaços de preservação e convivência para a comunidade de vida na Terra buscando garantir a otimização dos recursos ambientais com produção de alimentos e regeneração do solo.
+                </div>
+                <div class="informations">
+                    missaoambiental.org@gmail.com | Rua Moreira de Godói, o1 - Vila São José - São Paulo, SP | (11) 96677-6565
+                </div>
+            </div>
+        </div>  
+    </footer>
+</body>
+</html>
