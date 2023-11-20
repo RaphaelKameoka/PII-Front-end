@@ -411,6 +411,7 @@
     footer {
         background-color:#B3C79E;
         text-align: center;
+        padding: 90px 20px;
     }
     .footer-container {
         display: flex;
