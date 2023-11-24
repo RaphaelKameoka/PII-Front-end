@@ -31,15 +31,27 @@
         padding: 0px 0px 1000px 0px;
         top: 0;
         background-color: #3B7D36;
-        animation-duration: 2s;
+        animation-duration: 1s;
         margin-left: -80%;
         flex-direction: column;
         display: flex;
         overflow-y: auto;   
     }
     @keyframes showSidebar {
-        from{margin-left: 0px;}
-        top{margin-left: -230px;}
+        from {
+            margin-left: -80%;
+        }
+        to {
+            margin-left: 0px;
+        }
+    }    
+    @keyframes hideSidebar{
+        from{
+            margin-left: 0px;
+        }
+        to{
+            margin-left: -80%;
+        }
     }
     .button_sidebar{
         display: block;
