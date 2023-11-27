@@ -4,7 +4,6 @@ window.addEventListener("scroll", function(){
 })
 
 // Sidebar
-
 var header = document.getElementById('header')
 var show_sidebar = false;
 function toggleSideBar() {

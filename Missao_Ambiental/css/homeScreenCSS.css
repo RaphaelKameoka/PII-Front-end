@@ -583,6 +583,27 @@
         border-radius: 40px;
         border: none;
     }
+    .result_box ul{
+        margin: 10px 0 0 -25px;
+        position: absolute;
+    }
+    .result_box ul li{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        border-radius: 5px;
+        opacity: 0.8;
+        width: 445px;
+        padding: 15px 110px 15px 20px;
+        background-color: #c5c5c5;
+        border: solid 1px #b6b5b5;
+        cursor: pointer;
+        
+    }
+    .result_box ul li:hover{
+        background-color: #b6b5b5;
+        transition: 0.5s;
+    }
     .logo_body h1, .logo_body{
         display: flex;
         flex-direction: row;
