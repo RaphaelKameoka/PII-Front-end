@@ -37,3 +37,21 @@ function title_bg(titleID) {
         title.style.backgroundColor = (title.style.backgroundColor === 'rgb(197, 197, 197)') ? '#3B7D36' : '#c5c5c5';
     }
 }
+
+//enviar Gmail
+function enviarEmail() {
+    const destinatario = 'missaoambiental.org@gmail.com'
+    const assunto = encodeURIComponent('Assunto do e-mail')
+    const link = `https://mail.google.com/mail/?view=cm&to=${destinatario}&su=${assunto}&body=`
+
+    window.open(link);
+}
+
+
+//enviar WhatsApp
+function enviarWhatsapp() {
+    const numeroTelefone = '5511966776565';
+    const link = `https://wa.me/${numeroTelefone}?text=`;
+
+    window.open(link);
+}
