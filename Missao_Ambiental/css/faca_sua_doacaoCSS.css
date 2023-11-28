@@ -603,6 +603,12 @@
     .search_button{
         display: none;
     }
+    #qr_code{
+        position: fixed;
+        margin: 15% 40%;
+        z-index: 10;
+        display: none;
+    }
     .background_image{
         background-image: url(/Missao_Ambiental/imagens/faca_sua_doacao_background.png);
         background-size: 100%;
