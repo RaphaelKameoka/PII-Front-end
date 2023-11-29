@@ -128,7 +128,7 @@
         cursor: pointer;
     }
     .background_image{
-        background-image: url(/Missao_Ambiental/imagens/abelhas_sem_ferrao_background.jpg);
+        background-image: url(/Missao_Ambiental/imagens/galeria_background.PNG);
         top: 100px;
         background-size: 250%;
         background-position: center;
@@ -154,6 +154,10 @@
         margin-bottom: 20px;
         font-size: 50px;
     }
+    .message p{
+        font-size: 25px;
+        font-weight: lighter;
+    }
     .contact{
         position: relative;
         top: -290px;
@@ -171,25 +175,38 @@
         margin: 0 10px;
     }
     .title{
-        font-size: 42px;
-        color: #665656;
-        margin: 200px 0px 0px 50px;
+        margin-top: -200px;
+        font-size: 45px;
+        color: #3B7D36;
+        font-weight: bolder;
+        text-align: center;
     }
-    article p{
-        font-size: 17px;
-        margin: 0 7% 0px 7%;
+    .instagram_posts{
+        top: -250px;
+        position: relative;
+        margin: 300px 10% 0 10%;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
+        padding: 7% 1%;
+        border:3px solid #665656; 
+        background-color: #3B7D36;
     }
-    #title_1{
-        margin: -250px 0 20px 25px;
-    }
-    #title_2{
-        margin: 50px 0 20px 25px;
-    }
-    #title_3{
-        margin: 50px 10% 20px 25px;
-    }
-    #last{
-        padding-bottom: 100px;
+    .instagram-media{
+        background:#FFF;
+        border:0; 
+        border-radius:3px; 
+        box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); 
+        margin: 1px; 
+        max-width:600px; 
+        min-width:326px; 
+        padding:0; 
+        width:99.375%; 
+        width:undefinedpx;
+        height:undefinedpx;
+        max-height:3000%; 
+        width:undefinedpx;
     }
     .logo_footer img{
         margin: 15px 5px 5px 15px;
@@ -215,6 +232,7 @@
         font-size: 15px;
         margin-bottom: 20px;
     }
+    
 }
 @media (min-width: 1024px) and (max-width: 1439px){
     *{
@@ -295,7 +313,7 @@
     }
     .dropdown_menu a{
         text-decoration: none;
-        margin: 20px;
+        margin: 20px 0;
         color: black;
         display: block;
     }
@@ -345,7 +363,7 @@
         display: none;
     }
     .background_image{
-        background-image: url(/Missao_Ambiental/imagens/abelhas_sem_ferrao_background.jpg);
+        background-image: url(/Missao_Ambiental/imagens/galeria_background.PNG);
         background-size: 100%;
         background-position: center;
         background-repeat: no-repeat;
@@ -360,7 +378,7 @@
         position: relative;
         text-align: center;
         color: #ffffff;
-        top: -390px;
+        top: -360px;
         background: rgba(0, 0, 0, 0.5);
         padding: 90px 20px;
         margin: 0px 20%;
@@ -368,7 +386,6 @@
     }
     .message h2{
         font-size: 50px;
-        margin-bottom: 15px;
     }
     .contact{
         top: -290px;
@@ -391,25 +408,38 @@
         transition: 0.5s;
     }
     .title{
-        font-size: 42px;
-        color: #665656;
-        margin: 200px 0px 0px 50px;
+        font-size: 30px;
+        color: #3B7D36;
+        font-weight: bolder;
+        text-align: center;
+        margin: -200px;
     }
-    article p{
-        font-size: 20px;
-        margin: 0 110px 0px 130px;
+    .instagram_posts{
+        position: relative;
+        top: -150px;
+        margin: 400px 27% 0 27%;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
+        padding: 2% 2%;
+        border:3px solid #665656; 
+        background-color: #3B7D36;
     }
-    #title_1{
-        margin: -250px 10% 20px 5%;
-    }
-    #title_2{
-        margin: 50px 10% 20px 5%;
-    }
-    #title_3{
-        margin: 50px 10% 20px 5%;
-    }
-    #last{
-        padding-bottom: 100px;
+    .instagram-media{
+        background:#FFF;
+        border:0; 
+        border-radius:3px; 
+        box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); 
+        margin: 1px; 
+        max-width:500px; 
+        min-width:326px; 
+        padding:0; 
+        width:99.375%; 
+        width:undefinedpx;
+        height:undefinedpx;
+        max-height:3000%; 
+        width:undefinedpx;
     }
     .logo_footer img{
         margin: 15px 5px 5px 15px;
@@ -574,7 +604,7 @@
         margin: 30px 98px ;
     }
     .background_image{
-        background-image: url(/Missao_Ambiental/imagens/abelhas_sem_ferrao_background.jpg);
+        background-image: url(/Missao_Ambiental/imagens/galeria_background.PNG);
         background-size: 100%;
         background-position: center;
         background-repeat: no-repeat;
@@ -598,6 +628,9 @@
     .message h2{
         font-size: 90px;
     }
+    .message p{
+        font-size: 30px;
+    }
     .contact{
         top: -500px;
         position: relative;
@@ -619,25 +652,34 @@
         transition: 0.5s;
     }
     .title{
-        font-size: 60px;
-        color: #665656;
-        margin: 200px 0px 0px 50px;
+        font-size: 50px;
+        color: #3B7D36;
+        font-weight: bolder;
+        text-align: center;
+        margin: -400px 0 0 0;
     }
-    article p{
-        font-size: 20px;
-        margin: 0 100px 0px 100px;
+    .instagram_posts{
+        top: -350px;
+        position: relative;
+        margin: 500px 27% 0 27%;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
+        padding: 2% 2%;
+        border:5px solid #665656; 
+        background-color: #3B7D36;
     }
-    #title_1{
-        margin: -450px 10% 20px 5%;
-    }
-    #title_2{
-        margin: 50px 10% 20px 5%;
-    }
-    #title_3{
-        margin: 50px 10% 20px 5%;
-    }
-    #last{
-        padding-bottom: 250px;
+    .instagram-media{
+        background:#FFF;
+        border-radius:3px; 
+        box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); 
+        margin: 1px; 
+        max-width:800px; 
+        min-width:326px; 
+        padding:0; 
+        width:99.375%; 
+        max-height:3000%; 
     }
     .logo_footer img{
         margin: 15px 5px 5px 15px;
