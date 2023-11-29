@@ -103,7 +103,7 @@
         display: block;
         border: none;
         background-color: transparent;
-        margin: -24px 10px 0px 85%;
+        margin: -45px 10px 0px 85%;
     }
     .search_box_mobile{
         display: block;
@@ -200,6 +200,12 @@
         padding: 15px 40px;
         color: #ffffff;
         background-color: #11580b;
+    }
+    #qr_code{
+        position: fixed;
+        margin: 40% 22%;
+        z-index: 10;
+        display: none;
     }
     .logo_footer img{
         margin: 15px 5px 5px 15px;
@@ -437,6 +443,12 @@
     .donate_bg button:hover{
         transform: scale(1.15);
         transition: 0.5s; 
+    }
+    #qr_code{
+        position: fixed;
+        margin: 15% 35%;
+        z-index: 10;
+        display: none;
     }
     .logo_footer img{
         margin: 15px 5px 5px 15px;
