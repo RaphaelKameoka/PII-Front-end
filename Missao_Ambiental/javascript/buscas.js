@@ -18,9 +18,6 @@ let keywords = [
 const inputBox = document.getElementById('input_box')
 const resultBox = document.querySelector('.result_box')
 const liElements = document.querySelectorAll('.result_box li')
-console.log(inputBox)
-console.log(resultBox)
-console.log(liElements)
 document.getElementById('input_box').onkeyup = function(){
     let result = []
     let input = inputBox.value

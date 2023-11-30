@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/nossa_historiaCSS.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>Nossa história</title>
+    <script src="javascript/main.js"></script>
+    <script src="javascript/time_line.js"></script>
+</head>
+<body>
+    <header id="header">
+        <div class="logo_header">
+            <a href="homeScreen.html"><img src="imagens\logo_missao_ambiental_sem_fundo.png" alt="Logo Missao Ambiental"link></a>
+        </div>
+        <button onclick="toggleSideBar()" id="open_button" class="button_sidebar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </button>
+        <div class="navigation_header" id="navigation_header">
+            <nav>
+                <button onclick="toggleSideBar()" class="button_sidebar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </button>
+                <div class="search_box_mobile">
+                    <input type="text" class="search_box">
+                </div>
+                <div onclick="title_bg('title1')" class="dropdown" id="title1">
+                    <div onclick="accordion('menu1')"  class="dropdown_title">Nossos projetos &#11167</div>
+                    <ul id="menu1" class="dropdown_menu">
+                        <li><a href="abelha_sem_ferrao.html">Abelha sem ferrão</a></li>
+                        <li><a href="especies_nativas.html">Espécies nativas</a></li>
+                        <li><a href="compostagem.html">Compostagem</a></li>
+                        <li><a href="horta.html">Horta comunitária</a></li>
+                        <li><a href="educacao_ambiental.html">Educação ambiental</a></li>
+                        <li><a href="agua_da_chuva.html">Captacao da água da chuva</a></li>
+                        <li><a href="reciclagem.html">Reciclagem</a></li>
+                    </ul>
+                </div>
+                <div onclick="title_bg('title2')" class="dropdown" id="title2" class="dropdown">
+                    <div onclick="accordion('menu2')" class="dropdown_title">Sobre a Missão Ambiental &#11167</div>
+                    <ul id="menu2" class="dropdown_menu">
+                        <li><a href="quem_somos.html">Quem somos</a></li>
+                        <li><a href="nossa_historia.html">Nossa história</a></li>
+                        <li><a href="parceiros.html">Parceiros fantásticos</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                    </ul>
+                </div>            
+                <div onclick="title_bg('title3')" class="dropdown" id="title3" class="dropdown">
+                    <div onclick="accordion('menu3')" class="dropdown_title">Como Ajudar &#11167</div>
+                    <ul id="menu3" class="dropdown_menu">
+                        <li><a href="/Missao_Ambiental/faca_sua_doacao.html">Faça sua doação</a></li>
+                        <li><a href="/Missao_Ambiental/seja_voluntario.html">Torne-se um voluntário</a></li>
+                        <li><a href="entre_contato.html">Entre em contato</a></li>
+                    </ul>
+                </div>        
+            </nav>
+        </div>
+        <div class="search_active">
+            <input type="text" class="search_box" id="input_box">
+            <div class="result_box">
+                <ul>
+                </ul>
+            </div>
+            <button class="search_button" onclick="toggleSideBar()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg>
+            </button>
+        </div>
+    </header>
+    <main>
+        <div class="background_image"></div>
+        <div class="message">
+            <h2>Nossa história</h2>
+        </div>
+        <div class="contact">
+            <img onclick="enviarEmail()" src="imagens\gmail_icon.png" alt="icone Gmail" title="Gmail">
+            <img onclick="enviarWhatsapp()" src="imagens\whatsapp_icon.png " alt="icone Whatsapp" title="Whatsapp">
+            <a href="https://www.instagram.com/missao.ambiental/"><img src="imagens\instagram_icon.png" alt="icone Instagram" title="Instagram"></a>
+            <a href="https://www.facebook.com/missaoambiental.org/"><img src="imagens\facebook_icon.png" alt="icone facebook" title="Facebook"></a>
+        </div>
+        <article>
+            <div class="container">
+                <img src="imagens/logo_missao_ambiental_sem_fundo.png" alt="">
+                <h3>Missão <br> Ambiental</h3>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque dicta voluptatem numquam autem quasi assumenda facilis ullam nesciunt delectus architecto? Vero cum explicabo quis! Ad omnis officia quibusdam sed ullam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum mollitia architecto ut aperiam ab voluptas illum eligendi molestias impedit perferendis sequi, ullam praesentium, expedita quasi blanditiis ipsam, laudantium excepturi odio. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam quos necessitatibus nihil fuga reiciendis adipisci itaque, unde cumque labore hic reprehenderit enim dicta aliquid obcaecati dolore libero veritatis suscipit. Quidem.</p>
+        </article>
+        <div class="processo">
+            <div id="progress_bar_container">
+                <ul>
+                    <li onclick="changeActive(0)" class="step step01 active">
+                        <div class="step_inner">Ano 1</div>
+                      </li>
+                      <li onclick="changeActive(1)" class="step step02">
+                        <div class="step_inner">Ano 2</div>
+                      </li>
+                      <li onclick="changeActive(2)" class="step step03">
+                        <div class="step_inner">Ano 3</div>
+                      </li>
+                      <li onclick="changeActive(3)" class="step step04">
+                        <div class="step_inner">Ano 4</div>
+                      </li>
+                      <li onclick="changeActive(4)" class="step step05">
+                        <div class="step_inner">Ano 5</div>
+                    </li>
+                </ul>
+                <div id="line">
+                    <div id="line_process"></div>
+                </div>
+            </div>
+            <div id="progress_content_section">
+                <div class="section_content ano1 active">
+                    <h2>ANO 1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum numquam impedit adipisci unde, quod, suscipit rem quas et aperiam accusantium obcaecati consequuntur facilis nostrum ea tempore tempora? Facere, soluta dolorum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est iure dolor necessitatibus ut labore, nihil dignissimos impedit aut possimus obcaecati veritatis doloremque odit provident reprehenderit corporis unde doloribus laboriosam. Quis?</p>
+                    <img src="imagens/placeholder.jpg" alt="">
+                </div>
+                <div class="section_content ano2">
+                    <h2>ANO 2</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum numquam impedit adipisci unde, quod, suscipit rem quas et aperiam accusantium obcaecati consequuntur facilis nostrum ea tempore tempora? Facere, soluta dolorum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae libero maiores necessitatibus minima natus veniam quae. Alias minima commodi adipisci earum, reiciendis facere assumenda fuga architecto temporibus dolores corporis? Animi.</p>
+                    <img src="imagens/placeholder.jpg" alt="">
+                </div>
+                <div class="section_content ano3">
+                    <h2>ANO 3</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum numquam impedit adipisci unde, quod, suscipit rem quas et aperiam accusantium obcaecati consequuntur facilis nostrum ea tempore tempora? Facere, soluta dolorum!</p>
+                    <img src="imagens/placeholder.jpg" alt="">
+                </div>
+                <div class="section_content ano4">
+                    <h2>ANO 4</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum numquam impedit adipisci unde, quod, suscipit rem quas et aperiam accusantium obcaecati consequuntur facilis nostrum ea tempore tempora? Facere, soluta dolorum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi tenetur aperiam deleniti iure saepe est laborum! Nobis blanditiis odio est nostrum doloremque accusamus, consequuntur laudantium assumenda repellat consectetur vel rem!</p>
+                    <img src="imagens/placeholder.jpg" alt="">
+                </div>
+                <div class="section_content ano5">
+                    <h2>ANO 5</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum numquam impedit adipisci unde, quod, suscipit rem quas et aperiam accusantium obcaecati consequuntur facilis nostrum ea tempore tempora? Facere, soluta dolorum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni cupiditate illum qui dolorem autem quas eos quo, ullam, numquam voluptate quisquam omnis laudantium dignissimos minus fugit. Laboriosam consequuntur aliquid officiis?</p>
+                    <img src="imagens/placeholder.jpg" alt="">
+                </div>
+            </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="logo_footer">
+                <img src="imagens\logo_missao_ambiental_sem_fundo.png" alt="logo_Missao_Ambiental">
+            </div>
+            <div class="text-content">
+                <div class="description">
+                    A Missão Ambiental é uma associação civil sem fins lucrativos que cria espaços de preservação e convivência para a comunidade de vida na Terra buscando garantir a otimização dos recursos ambientais com produção de alimentos e regeneração do solo.
+                </div>
+                <div class="informations">
+                    missaoambiental.org@gmail.com | Rua Moreira de Godói, o1 - Vila São José - São Paulo, SP | (11) 96677-6565
+                </div>
+            </div>
+        </div>  
+    </footer>
+</body>
+<script src="javascript/buscas.js"></script>
+</html>
